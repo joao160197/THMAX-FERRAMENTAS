@@ -6,7 +6,7 @@ return (
   <header className="w-full flex items-center px-2 py-4 bg-black h-20 shadow-lg">
   <div className="flex items-center justify-between gap-2 w-full max-w-7xl mx-auto">
    
-      <h1 className="font-thin text-2xl pl-2 hover:tracking-widest duration-300 text-white">
+      <h1 className="font-thin cursor-pointer text-2xl pl-2 hover:tracking-widest duration-300 text-white">
         <span className="text-white text-5xl font-bold w-128 h-44 mr-2">
           THAMAX
         </span>
