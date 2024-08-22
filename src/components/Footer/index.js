@@ -31,7 +31,7 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-black border-t border-[#fbaf17]">
+      <div className="bg-black border-t border-gray-300">
         <div className="max-w-[1250px] mx-auto py-5 px-10 flex justify-end">
           <span className="text-sm text-white opacity-80 flex justify-start mr-[350px]">
             Copyright © 2024 THMAX Ferramentas - Todos os direitos reservados
