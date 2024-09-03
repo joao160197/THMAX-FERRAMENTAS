@@ -8,6 +8,8 @@ import brocasImg from '../../img/Brocas.jpg';
 import brocasEspeciaisImg from '../../img/Brocas Especiais.jpg';
 import variadasImg from '../../img/Variadas.jpg';
 import marcasImg from '../../img/Marcas.jpg';
+import etiquetaMarcas from '../../img/etiqueta-marcas.png';
+
 
 import deWaltLogo from '../../img/DeWalt-Logo.jpg';
 import rhomLogo from '../../img/Rohm-logo.jpg';
@@ -56,20 +58,24 @@ export function Body() {
           onMouseLeave={() => setShowImage(false)}
           className="text-white text-2xl cursor-pointer p-4"
         >
-          <p className='bg-gray-800 rounded-lg p-1 text-center'>Marcas Parceiras</p>
-        </div>
-
-        <div
-          className={`flex flex-wrap justify-center mb-6 gap-6 transition-opacity duration-500 ${
-            showImage ? 'opacity-100' : 'opacity-0'
-          }`}
-        >
-          <img src={deWaltLogo} alt="Logo DeWalt" className="w-32 h-24 object-cover rounded-lg" />
-          <img src={rhomLogo} alt="Logo Rhom" className="w-32 h-24 object-cover rounded-lg" />
-          <img src={osgLogo} alt="Logo OSG" className="w-32 h-24 object-cover rounded-lg" />
-          <img src={gedoreLogo} alt="Logo Gedore" className="w-32 h-24 object-cover rounded-lg" />
-          <img src={starretLogo} alt="Logo Starrett" className="w-32 h-24 object-cover rounded-lg" />
-          <img src={indacoLogo} alt="Logo Indaco" className="w-32 h-24 object-cover rounded-lg" />
+          {showImage ? (
+            <div
+              className="flex flex-wrap justify-center gap-6"
+              style={{ transition: 'opacity 0.5s' }}
+            >
+              <img src={deWaltLogo} alt="Logo DeWalt" className="w-32 h-24 object-cover rounded-lg" />
+              <img src={rhomLogo} alt="Logo Rhom" className="w-32 h-24 object-cover rounded-lg" />
+              <img src={osgLogo} alt="Logo OSG" className="w-32 h-24 object-cover rounded-lg" />
+              <img src={gedoreLogo} alt="Logo Gedore" className="w-32 h-24 object-cover rounded-lg" />
+              <img src={starretLogo} alt="Logo Starrett" className="w-32 h-24 object-cover rounded-lg" />
+              <img src={indacoLogo} alt="Logo Indaco" className="w-32 h-24 object-cover rounded-lg" />
+            </div>
+          ) : (
+            <p className="mb-6 text-center flex items-center justify-center gap-2">
+              <img src={etiquetaMarcas} alt="Logo de etiqueta" className="w-9 h-9" />
+              Marcas Parceiras
+            </p>
+          )}
         </div>
       </div>
     </main>

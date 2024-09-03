@@ -1,7 +1,7 @@
 import React from 'react';
-import Img1 from '../../img/Ferramentas.jpg';
-import Img2 from '../../img/Ferramentas2.jpg';
-import Img3 from '../../img/Ferramentas3.jpg';
+import Img1 from '../../img/Ferramentas.png';
+import Img2 from '../../img/Ferramentas2.png';
+import Img3 from '../../img/Ferramentas3.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";

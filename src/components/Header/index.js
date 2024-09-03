@@ -6,7 +6,7 @@ return (
    
       <h1 className="font-thin cursor-pointer text-2xl pl-2 hover:tracking-widest duration-300 text-white">
         <span className="text-white text-5xl font-bold w-128 h-44 mr-2">
-          THAMAX
+          THMAX
         </span>
         Ferramentas 
       </h1>
