@@ -9,11 +9,11 @@ const ContactPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Telefone</h2>
-            <p className="text-gray-700">+55 (11) 1234-5678</p>
+            <p className="text-gray-700">(11) 2131-1300 | (11) 99189-9415</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">E-mail</h2>
-            <p className="text-gray-700">contato@empresa.com.br</p>
+            <p className="text-gray-700">vendas@thmax.com.br</p>
           </div>
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Endereço</h2>
@@ -21,7 +21,7 @@ const ContactPage = () => {
           </div>
           <div className="space-y-4">
             <h2 className="text-lg font-semibold">Horário de Funcionamento</h2>
-            <p className="text-gray-700">Segunda a Sexta: 8h - 18h</p>
+            <p className="text-gray-700">Segunda a Quinta: 8h - 18h | Sexta: 8h - 17h</p>
           </div>
         </div>
 
