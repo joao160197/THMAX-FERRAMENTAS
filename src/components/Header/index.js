@@ -25,13 +25,13 @@ export function Header() {
               className="text-white text-4xl md:hidden cursor-pointer"
             />
             <div className="hidden md:flex items-center gap-4">
-              <button className="font-bold text-xl text-white ">
+              <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
                 Home
               </button>
-              <button className="font-bold text-xl text-white">
+              <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
                 A Empresa
               </button>
-              <button className="font-bold text-xl text-white">
+              <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
                 Contato
               </button>
             </div>
@@ -48,7 +48,7 @@ export function Header() {
           <AiOutlineClose />
         </button>
         <nav className="flex flex-col gap-4">
-          <button className="font-bold text-xl hover:text-blue-900 duration-300">
+          <button className="font-bold text-xl hover:text-blue-900 duration-300 ">
             Home
           </button>
           <button className="font-bold text-xl hover:text-blue-900 duration-300">
