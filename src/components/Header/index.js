@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +15,7 @@ export function Header() {
       <header className="w-full flex items-center px-2 py-4 bg-black h-20 shadow-lg">
         <div className="flex items-center justify-between gap-2 w-full max-w-7xl mx-auto">
           <h1 className="font-thin cursor-pointer text-2xl pl-2 hover:tracking-widest duration-300 text-white">
-            <span className=" text-5xl font-bold w-128 h-44 mr-2">
-              THMAX
-            </span>
+            <span className="text-5xl font-bold w-128 h-44 mr-2">THMAX</span>
             <span>Ferramentas</span>
           </h1>
           <div className="flex items-center">
@@ -25,6 +24,7 @@ export function Header() {
               className="text-white text-4xl md:hidden cursor-pointer"
             />
             <div className="hidden md:flex items-center gap-4">
+<<<<<<< HEAD
               <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
                 Home
               </button>
@@ -32,8 +32,17 @@ export function Header() {
                 A Empresa
               </button>
               <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
+=======
+              <Link to="/" className="font-bold text-xl text-white">
+                Home
+              </Link>
+              <Link to="/empresa" className="font-bold text-xl text-white">
+                A Empresa
+              </Link>
+              <Link to="/contato" className="font-bold text-xl text-white">
+>>>>>>> 7faedb5d2be3d5f5ddc73637a178811a259ad3d4
                 Contato
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -48,15 +57,19 @@ export function Header() {
           <AiOutlineClose />
         </button>
         <nav className="flex flex-col gap-4">
+<<<<<<< HEAD
           <button className="font-bold text-xl hover:text-blue-900 duration-300 ">
+=======
+          <Link to="/" className="font-bold text-xl hover:text-blue-900 duration-300">
+>>>>>>> 7faedb5d2be3d5f5ddc73637a178811a259ad3d4
             Home
-          </button>
-          <button className="font-bold text-xl hover:text-blue-900 duration-300">
+          </Link>
+          <Link to="/empresa" className="font-bold text-xl hover:text-blue-900 duration-300">
             A Empresa
-          </button>
-          <button className="font-bold text-xl hover:text-blue-900 duration-300">
+          </Link>
+          <Link to="/contato" className="font-bold text-xl hover:text-blue-900 duration-300">
             Contato
-          </button>
+          </Link>
         </nav>
       </div>
     </>
