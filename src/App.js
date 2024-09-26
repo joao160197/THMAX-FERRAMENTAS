@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import { Header } from "./components/Header";
 import { Slyder } from "./components/Slyder";
 import { Body } from "./components/Body";
-import ContactPage from "./pages/ContactPage/ContactPage";
+import  ContactPage  from "./pages/ContactPage/ContactPage";
+import  AboutPage  from "./pages/AboutPage/AboutPage";
 import { Footer } from "./components/Footer";
 
 import './App.css';
@@ -21,7 +22,7 @@ const Wrapper = () => {
       )}
       <Routes>
         <Route path="/contato" element={<ContactPage />} />
-        {/* Adicione outras rotas conforme necessário */}
+        <Route path="/empresa" element={<AboutPage />} />
       </Routes>
     </>
   );
