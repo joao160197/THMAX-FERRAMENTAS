@@ -24,23 +24,13 @@ export function Header() {
               className="text-white text-4xl md:hidden cursor-pointer"
             />
             <div className="hidden md:flex items-center gap-4">
-<<<<<<< HEAD
-              <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
-                Home
-              </button>
-              <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
-                A Empresa
-              </button>
-              <button className="font-bold text-gray-100 text-xl hover:text-blue-900 duration-300">
-=======
-              <Link to="/" className="font-bold text-xl text-white">
+              <Link to="/" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
                 Home
               </Link>
-              <Link to="/empresa" className="font-bold text-xl text-white">
+              <Link to="/empresa" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
                 A Empresa
               </Link>
-              <Link to="/contato" className="font-bold text-xl text-white">
->>>>>>> 7faedb5d2be3d5f5ddc73637a178811a259ad3d4
+              <Link to="/contato" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
                 Contato
               </Link>
             </div>
@@ -57,11 +47,7 @@ export function Header() {
           <AiOutlineClose />
         </button>
         <nav className="flex flex-col gap-4">
-<<<<<<< HEAD
-          <button className="font-bold text-xl hover:text-blue-900 duration-300 ">
-=======
           <Link to="/" className="font-bold text-xl hover:text-blue-900 duration-300">
->>>>>>> 7faedb5d2be3d5f5ddc73637a178811a259ad3d4
             Home
           </Link>
           <Link to="/empresa" className="font-bold text-xl hover:text-blue-900 duration-300">
