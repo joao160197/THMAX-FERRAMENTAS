@@ -24,13 +24,13 @@ export function Header() {
               className="text-white text-4xl md:hidden cursor-pointer"
             />
             <div className="hidden md:flex items-center gap-4">
-              <Link to="/" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
+              <Link to="/" className="font-bold text-xl text-white">
                 Home
               </Link>
               <Link to="/empresa" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
                 A Empresa
               </Link>
-              <Link to="/contato" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
+              <Link to="/contato" className="font-bold text-xl text-white">
                 Contato
               </Link>
             </div>
