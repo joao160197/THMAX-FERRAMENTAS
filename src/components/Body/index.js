@@ -20,18 +20,17 @@ export function Body() {
   const [showBrands, setShowBrands] = useState(false);
 
   return (
-<main className="bg-violet-950">
-<div className="relative mx-4 md:mx-8">
-  <hr className="border-t-2" />
-  <div className="absolute inset-0 flex mt-3 items-center justify-center px-4">
-    <div className="flex-grow border-t border-white mx-2"></div>
-    <span className="p-2 text-white text-xs md:text-sm font-medium z-10">
-      MAIS OFERTAS
-    </span>
-    <div className="flex-grow border-t border-white mx-2"></div>
-  </div>
-</div>
-
+    <main className="bg-violet-950">
+      <div className="relative mx-4 md:mx-8">
+        <hr className="border-t-2" />
+        <div className="absolute inset-0 flex mt-3 items-center justify-center px-4">
+          <div className="flex-grow border-t border-white mx-2"></div>
+          <span className="p-2 text-white text-xs md:text-sm font-medium z-10">
+            MAIS OFERTAS
+          </span>
+          <div className="flex-grow border-t border-white mx-2"></div>
+        </div>
+      </div>
 
       <div className="flex flex-wrap justify-center gap-4 md:gap-6">
         {renderImageSection("Serras", serrasImg)}
