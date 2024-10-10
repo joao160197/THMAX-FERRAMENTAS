@@ -1,30 +1,75 @@
 import React from "react";
+import { RiHomeGearFill } from "react-icons/ri";
+import { FaTools } from "react-icons/fa";
+import { IoBusiness } from "react-icons/io5";
+import { MdOutlineAttachMoney } from "react-icons/md";
 
 const AboutPage = () => {
-    const thmax = {
-        nome: "THMAX",
-        descricao: "Fundada em 2003, a THMAX Ferramentas é uma empresa brasileira que comercializa máquinas, ferramentas e afins. Com um compromisso firme com a qualidade e a excelência, estamos sempre em busca das principais tendências do mercado.",
-        missao: "Nossa missão é fornecer ferramentas de alta qualidade, inovadoras e resistentes que capacitem nossos clientes a realizar seus trabalhos com soluções, segurança e eficiência. Buscamos melhorar continuamente nossos produtos para atender às necessidades de nossos clientes, promovendo soluções que agreguem valor ao seu trabalho e contribuam para seu sucesso em diversos setores.",
-        servicos: "Oferecemos uma ampla gama de ferramentas manuais e elétricas, projetadas para atender às necessidades de profissionais em diversos setores. Nossos produtos são selecionados para garantir durabilidade, desempenho e segurança."
-    };
-
-    return (
-        <div className="min-h-screen flex items-center justify-center bg-blue-900 p-4 sm:p-6">
-            <div className="max-w-full sm:max-w-4xl bg-white p-6 sm:p-8 rounded-lg shadow-lg">
-                <h1 className="text-2xl sm:text-3xl font-bold text-black mb-4 text-center">{thmax.nome}</h1>
-                
-                <p className="text-base sm:text-lg mb-4">
-                    <strong className="text-black font-semibold">Descrição:</strong> {thmax.descricao}
-                </p>
-                <p className="text-base sm:text-lg mb-4">
-                    <strong className="text-black font-semibold">Missão:</strong> {thmax.missao}
-                </p>
-                <p className="text-base sm:text-lg mb-4">
-                    <strong className="text-black font-semibold">Serviços:</strong> {thmax.servicos}
-                </p>
+  return (
+    <div className="min-h-screen flex items-center justify-center bg-violet-950 p-4 sm:p-6">
+      <div className="max-w-full sm:max-w-4xl bg-white p-6 sm:p-8 rounded-lg shadow-lg">
+        <div className="relative border-l border-gray-200">
+          <div className="mb-8 ml-6 flex items-start">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center">
+              <RiHomeGearFill size={30} color="white" />
             </div>
+            <div className="ml-4">
+              <time className="block text-sm text-gray-500">2024 - atual</time>
+              <h3 className="text-lg font-semibold text-blue-600">
+                THMAX Ferramentas
+              </h3>
+              <h4 className="text-md text-gray-500">São Paulo, BR</h4>
+              <p className="text-gray-600 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-8 ml-6 flex items-start">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center">
+              <FaTools size={20} color="white" />
+            </div>
+            <div className="ml-4">
+              <time className="block text-sm text-gray-500">1950 - 2008</time>
+              <h3 className="text-lg font-semibold text-blue-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <h4 className="text-md text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h4>
+              <p className="text-gray-600 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+
+          <div className="mb-8 ml-6 flex items-start">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-blue-500 text-white flex items-center justify-center">
+              <IoBusiness size={20} color="white" />
+            </div>
+            <div className="ml-4">
+              <time className="block text-sm text-gray-500">2008 - 2024</time>
+              <h3 className="text-lg font-semibold text-blue-600">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h3>
+              <h4 className="text-md text-gray-500">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </h4>
+              <p className="text-gray-600 mt-2">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+            </div>
+          </div>
+
+          <div className="ml-6 flex items-start">
+            <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-500 text-white flex items-center justify-center">
+              <MdOutlineAttachMoney size={25} color="white" />
+            </div>
+          </div>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default AboutPage;
