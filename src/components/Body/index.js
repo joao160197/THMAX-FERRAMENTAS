@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-import backgroundImg from '../../img/Background.jpg';
 import serrasImg from '../../img/Serras.jpg';
 import gramposImg from '../../img/Grampos de fixacao.jpg';
 import osgImg from '../../img/OSG.jpg';
@@ -21,22 +20,15 @@ export function Body() {
   const [showBrands, setShowBrands] = useState(false);
 
   return (
-    <main className="bg-gray-950">
-      <div className="relative mb-6">
-        <img src={backgroundImg} alt="Imagem de fundo" className="w-full h-128 object-cover" />
-        <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
-          <h2 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold animate__animated animate__fadeInLeft text-center">
-            FERRAMENTAS ESPECIAIS
-            <hr className="my-2 md:my-4" />
-            Para Todos os Profissionais
-          </h2>
-          <h3 className="text-white text-lg md:text-base lg:text-lg font-bold animate__animated animate__fadeInLeft text-center">THMAX Ferramentas</h3>
-        </div>
-      </div>
-      <div className="relative my-6 mx-4 md:mx-8">
-        <hr className="border-t-2 border-gray-300" />
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-100 px-4">
-          <span className="p-2 bg-gray-950 text-white text-xs md:text-sm font-medium">MAIS OFERTAS</span>
+    <main className="bg-violet-950">
+      <div className="relative mx-4 md:mx-8">
+        <hr className="border-t-2" />
+        <div className="absolute inset-0 flex mt-3 items-center justify-center px-4">
+          <div className="flex-grow border-t border-white mx-2"></div>
+          <span className="p-2 text-white text-xs md:text-sm font-medium z-10">
+            MAIS OFERTAS
+          </span>
+          <div className="flex-grow border-t border-white mx-2"></div>
         </div>
       </div>
 
