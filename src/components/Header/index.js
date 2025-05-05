@@ -31,6 +31,9 @@ export function Header() {
               <Link to="/" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
                 Home
               </Link>
+              <Link to="/catalogo" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
+                Catálogo
+              </Link>
               <Link to="/empresa" className="font-bold text-gray-100 text-xl  hover:text-blue-900 duration-300">
                 A Empresa
               </Link>
@@ -53,6 +56,9 @@ export function Header() {
         <nav className="flex flex-col gap-4">
           <Link to="/" className="font-bold text-xl hover:text-blue-900 duration-300">
             Home
+          </Link>
+          <Link to="/catalogo" className="font-bold text-xl hover:text-blue-900 duration-300">
+            Catálogo
           </Link>
           <Link to="/empresa" className="font-bold text-xl hover:text-blue-900 duration-300">
             A Empresa

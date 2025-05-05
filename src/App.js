@@ -4,6 +4,7 @@ import { Slyder } from "./components/Slyder";
 import { Body } from "./components/Body";
 import  ContactPage  from "./pages/ContactPage/ContactPage";
 import  AboutPage  from "./pages/AboutPage/AboutPage";
+import  CatalogPage  from "./pages/CatalogPage/CatalogPage";
 import { Footer } from "./components/Footer";
 
 import './App.css';
@@ -23,6 +24,7 @@ const Wrapper = () => {
       <Routes>
         <Route path="/contato" element={<ContactPage />} />
         <Route path="/empresa" element={<AboutPage />} />
+        <Route path="/catalogo" element={<CatalogPage />} />
       </Routes>
     </>
   );
