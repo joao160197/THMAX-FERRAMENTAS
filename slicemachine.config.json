@@ -1,0 +1,7 @@
+{
+    "repositoryName": "thmax-ferramentas",
+    "adapter": "@slicemachine/adapter-next",
+    "libraries": [
+      "./slices"
+    ]
+  }
