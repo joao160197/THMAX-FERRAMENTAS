@@ -219,22 +219,25 @@ const CatalogPage = () => {
       <div className="w-1/6 p-6 bg-gray-200">
         <h2 className="text-2xl font-bold mb-4">Categorias</h2>
         <div>
-          {categories.map(category => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className="w-full text-left p-2 mb-2 bg-white rounded hover:bg-gray-300"
-            >
-              {category}
-            </button>
-          ))}
+          <select
+            onChange={(e) => setSelectedCategory(e.target.value)}
+            className="w-full p-2 mb-2 bg-white rounded border"
+            value={selectedCategory || ""}
+          >
+            <option value="">Todas as Categorias</option>
+            {categories.map((category) => (
+              <option key={category} value={category}>
+                {category}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
       <div className="w-5/6 p-6">
         <h1 className="text-3xl font-bold mb-6">Catálogo</h1>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {filteredItems.map(item => (
+          {filteredItems.map((item) => (
             <div key={item.id} className="border p-4 rounded shadow">
               <h2 className="text-xl font-semibold mb-2">{item.data.title}</h2>
               {item.data.image?.url && (
